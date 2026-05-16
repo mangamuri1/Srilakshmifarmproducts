@@ -388,7 +388,7 @@
   .product-badge {
     position: absolute;
     top: 16px;
-    left: 16px;
+    right: 16px;
     background: var(--green-dark);
     color: var(--gold-light);
     font-size: 10px;
@@ -814,7 +814,7 @@
     padding-bottom: 36px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-  .footer-brand img { height: 70px; filter: brightness(0) invert(1); opacity: 0.85; margin-bottom: 16px; }
+  .footer-brand img { height: 70px; margin-bottom: 16px; }
   .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
   .footer-col h4 {
     color: var(--gold-light);
@@ -847,7 +847,8 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .hero-content { grid-template-columns: 1fr; text-align: center; padding: 0 30px; }
-    .hero-visual { display: none; }
+    .hero-visual { margin-top: 30px; display: flex; justify-content: center; }
+    .hero-spice-icon { width: 180px; height: 180px; }
     .story-section { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; gap: 30px; }
